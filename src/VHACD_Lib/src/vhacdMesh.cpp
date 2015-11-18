@@ -50,7 +50,7 @@ namespace VHACD
 
         Vec3<double> ver0, ver1, ver2;
         double totalVolume = 0.0;
-        for(int t = 0; t < nT; t++)
+        for(size_t t = 0; t < nT; t++)
         {
             const Vec3<int> & tri = GetTriangle(t);
             ver0 = GetPoint(tri[0]);
@@ -128,7 +128,7 @@ namespace VHACD
         }
         Vec3<double> ver0, ver1, ver2;
         double volume;
-        for (int t = 0; t < nT; t++)
+        for (size_t t = 0; t < nT; t++)
         {
             const Vec3<int> & tri = GetTriangle(t);
             ver0 = GetPoint(tri[0]);
